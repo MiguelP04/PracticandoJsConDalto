@@ -23,8 +23,8 @@ function increaseHour() { //Funcion para incrementar la hora
   }
   time = time24 > 12 ? time24 - 12 : time24;
   date.textContent = `${time}:00 ${amOrPm}`;
-  console.log(time)
 
+ 
 }
 
 let time1 = setInterval(increaseHour, 1000);
@@ -39,7 +39,8 @@ buttonPass.addEventListener('click', () => { //Boton para pasar
         mainContainer.classList.add("hidden");
         secondaryContainer.classList.remove("hidden");
         clearInterval(time1)
-        setInterval(increaseHour, 20000);
+        setInterval(increaseHour, 10000);
+        console.log("hola")
         
     } else {
         mainContainer.classList.add("hidden");
@@ -58,12 +59,11 @@ let firstPerson = true;
 buttonSubmit.addEventListener("click", ()=>{ //Boton para enviar el input de edad
     let data = document.getElementById("data").value;
     let dataInt = parseInt(data);
-        if(time >= 6){ // Condiciones para corregir errores
+        if(time >= 6 && amOrPm == "a. m."){ // Condiciones para corregir errores
             secondaryContainer.classList.add("hidden");
             lateContainer.classList.remove("hidden");
-            clearInterval(time1);
-            setInterval(increaseHour, 1000)
-
+    
+           time1 = setInterval(increaseHour, 1000)
 
         } else if(dataInt < 18 && dataInt > 0){
             alert("No puedes pasar, eres menor de edad");
@@ -104,4 +104,5 @@ const buttonBackToMain = document.getElementById("btn-back-to-main");
 buttonBackToMain.addEventListener("click", ()=>{
     lateContainer.classList.add("hidden");
     mainContainer.classList.remove("hidden")
+    firstPerson = true;
 })
