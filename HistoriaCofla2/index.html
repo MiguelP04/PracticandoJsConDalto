@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia Cofla 2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body style="background-image: url(img/messi.webp)" class="bg-cover">
+    <section class="absolute">
+        <div class="bg-white w-40 m-6 rounded-lg text-center ">
+            <p class="p-2">Son las <span id="time"></span></p>
+        </div>
+    </section>
+    <section id="main-container">
+        <div class="flex flex-col justify-center items-center space-y-6 h-screen">
+            <h1 class="text-2xl font-bold bg-blue-600 rounded-lg px-4 py-2">Historia de Cofla 2</h1>
+            <button id="btn-pass" class="cursor-pointer bg-slate-200 px-2 py-1 rounded-full font-bold border-solid  border-2 hover:border-solid hover:border-2 hover:border-indigo-600">Haz click para pasar</button>
+        </div>
+    </section>
+
+    <section id="secondary-container" class="flex justify-center items-center w-screen h-screen hidden">
+        <div class="flex flex-col justify-center items-center bg-white space-y-6 p-4 rounded-lg shadow-xl">
+            <h2 class="text-xl text-blue-600">Dejamos pasar a los mayores de 18 años</h2>
+            <div class="space-y-2">
+                <p class="text-center ">Ingrese su edad</p>
+                <input id="data" type="number" class="p-1 rounded-sm focus:outline-blue-600 border-1 border" maxlength="10" placeholder="Edad" min="0">
+            </div>
+            <button id="btn-submit" class="bg-blue-600 text-white w-28 rounded-lg border-solid border-2 border-blue-600 hover:border-blue-400 shadow-lg shadow-blue-500/50">Ingresar</button>
+        </div>  
+    </section>
+
+    <section id="closed-container" class="flex flex-col justify-center items-center w-screen h-screen space-y-6 hidden">
+        <div class="flex flex-col justify-center items-center bg-white space-y-2 p-4 rounded-lg shadow-xl">
+            <h2 class="text-xl text-red-600 font-bold">Esta cerrado</h2>
+            <p class="text-xl text-red-600">No puedes pasar</p>
+        </div>  
+        <button id="btn-back" class="flex bg-white px-4 py-2 mr-14 rounded-full hover:outline hover:outline-blue-800 hover:bg-slate-200 text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 mt-1">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+              </svg>
+            <p>Regresar</p>              
+        </button>
+        
+    </section>
+
+    <section id="first-person-container" class="flex flex-col justify-center items-center w-screen h-screen space-y-6 hidden">
+        <div class="flex flex-col justify-center items-center bg-white space-y-2 p-4 rounded-lg shadow-xl">
+            <h2 class="text-xl text-blue-600 font-bold">Bienvenido</h2>
+            <p class="text-xl text-blue-600">Como eres la primer persona después de las 2am. <b class="font-bold text-green-600">NO PAGAS</b></p>
+        </div>  
+        <button id="btn-back-two" class="flex bg-white px-4 py-2 mr-14 rounded-full hover:outline hover:outline-blue-800 hover:bg-slate-200 text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 mt-1">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+              </svg>
+            <p>Regresar</p>              
+        </button>
+        
+    </section>
+
+    <section id="welcome-container" class="flex flex-col justify-center items-center w-screen h-screen space-y-6 hidden">
+        <div class="flex flex-col justify-center items-center bg-white space-y-2 p-4 rounded-lg shadow-xl">
+            <h2 class="text-xl text-blue-600 font-bold">Bienvenido</h2>
+            <p class="text-xl text-blue-600">Pagame que son 5 dolitas</p>
+        </div>  
+        <button id="btn-back-three" class="flex bg-white px-4 py-2 mr-14 rounded-full hover:outline hover:outline-blue-800 hover:bg-slate-200 text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 mt-1">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+              </svg>
+            <p>Regresar</p>              
+        </button>
+        
+    </section>
+
+    <section id="late-container" class="flex flex-col justify-center items-center w-screen h-screen space-y-6 hidden">
+        <div class="flex flex-col justify-center items-center bg-white space-y-2 p-4 rounded-lg shadow-xl">
+            <h2 class="text-xl text-red-600 font-bold">Ya esta cerrado</h2>
+        </div>  
+        <button id="btn-back-to-main" class="flex bg-white px-4 py-2 mr-14 rounded-full hover:outline hover:outline-blue-800 hover:bg-slate-200 text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 mt-1">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+              </svg>
+            <p>Regresar</p>              
+        </button>
+        
+    </section>
+
+
+</body>
+<script src="cofla2.js"></script>
+</html>

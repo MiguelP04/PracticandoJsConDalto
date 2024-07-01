@@ -1,0 +1,42 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    
+}
+
+img{
+    width: 150px;
+}
+
+.flex-items{
+    width: 150px;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+    margin-left: 30px;
+}
+
+.flex-items:focus{
+    border: 2px solid green;
+    box-shadow: 0px 0px 22px #317124;
+}
+
+.flex-items:hover{
+    border: 2px solid green;
+    box-shadow: 0px 0px 22px #317124;
+}
+
+.buy_button {
+    background-color: green;
+    color: white;
+    padding: 6px 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.form {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
